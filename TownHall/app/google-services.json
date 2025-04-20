@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "722016604680",
+    "project_id": "townhall-97f5c",
+    "storage_bucket": "townhall-97f5c.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:722016604680:android:4468707e5893f9647177bd",
+        "android_client_info": {
+          "package_name": "com.example.townhall"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDP1E1miHt7dtK6_3MycwiyLb7ISQXsQA4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EventRegisterFragment">
+
+    <!-- Scrollable Form -->
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/ButtonSubmitRegister"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Participant Details -->
+            <TextView
+                android:id="@+id/participant_details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Participant Details"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/white" />
+
+            <!-- Radio Buttons -->
+            <!--            <RadioGroup-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_marginTop="8dp"-->
+            <!--                android:orientation="horizontal">-->
+
+            <!--                <RadioButton-->
+            <!--                    android:id="@+id/radio_me"-->
+            <!--                    android:layout_width="wrap_content"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:text="(Me)"-->
+            <!--                    android:buttonTint="@android:color/white"-->
+            <!--                    android:textColor="@android:color/white" />-->
+
+            <!--                <RadioButton-->
+            <!--                    android:id="@+id/radio_new"-->
+            <!--                    android:layout_width="wrap_content"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:layout_marginStart="16dp"-->
+            <!--                    android:text="(New)"-->
+            <!--                    android:buttonTint="@android:color/white"-->
+            <!--                    android:textColor="@android:color/white" />-->
+            <!--            </RadioGroup>-->
+
+            <!-- Full Name -->
+            <EditText
+                android:id="@+id/full_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:hint="Full Name"
+                android:backgroundTint="@android:color/white"
+                android:textColor="@android:color/white"
+                android:textColorHint="@color/grey" />
+
+            <!-- IC Number and Date of Birth -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/ic_number"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="IC Number"
+                    android:inputType="number"
+                    android:backgroundTint="@android:color/white"
+                    android:textColor="@android:color/white"
+                    android:textColorHint="@color/grey" />
+                <EditText
+                    android:id="@+id/date_of_birth"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="Date of Birth"
+                    android:backgroundTint="@android:color/white"
+                    android:textColor="@android:color/white"
+                    android:textColorHint="@color/grey"
+                    android:clickable="false"
+                    android:cursorVisible="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:drawableEnd="@android:drawable/ic_menu_my_calendar" />
+            </LinearLayout>
+
+            <!-- Gender Dropdown -->
+            <Spinner
+                android:id="@+id/gender_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="@android:color/white"
+                android:spinnerMode="dropdown" />
+
+            <!-- Address -->
+            <EditText
+                android:id="@+id/address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:hint="Address"
+                android:backgroundTint="@android:color/white"
+                android:textColor="@android:color/white"
+                android:textColorHint="@color/grey" />
+
+            <!-- Postcode and City -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/postcode"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="Postcode"
+                    android:inputType="number"
+                    android:backgroundTint="@android:color/white"
+                    android:textColor="@android:color/white"
+                    android:textColorHint="@color/grey" />
+
+                <EditText
+                    android:id="@+id/city"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="City"
+                    android:backgroundTint="@android:color/white"
+                    android:textColor="@android:color/white"
+                    android:textColorHint="@color/grey" />
+            </LinearLayout>
+
+            <!-- State Dropdown -->
+            <Spinner
+                android:id="@+id/state_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="@android:color/white"
+                android:spinnerMode="dropdown" />
+
+            <!-- Email -->
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:backgroundTint="@android:color/white"
+                android:textColor="@android:color/white"
+                android:textColorHint="@color/grey" />
+            <!-- Contact Number -->
+            <EditText
+                android:id="@+id/contact_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:hint="Contact Number"
+                android:inputType="number"
+                android:backgroundTint="@android:color/white"
+                android:textColor="@android:color/white"
+                android:textColorHint="@color/grey" />
+
+            <!-- Emergency Contact -->
+            <EditText
+                android:id="@+id/emergency_contact_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:hint="Emergency Contact Number"
+                android:backgroundTint="@android:color/white"
+                android:textColor="@android:color/white"
+                android:inputType="number"
+                android:textColorHint="@color/grey" />
+
+            <!-- Emergency Contact Relationship -->
+            <EditText
+                android:id="@+id/emergency_contact_relationship"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:hint="Emergency Contact Relationship"
+                android:backgroundTint="@android:color/white"
+                android:textColor="@android:color/white"
+                android:textColorHint="@color/grey" />
+
+            <!-- Medical Condition -->
+            <EditText
+                android:id="@+id/medical_condition"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:hint="Medical Condition (Optional)"
+                android:backgroundTint="@android:color/white"
+                android:textColor="@android:color/white"
+                android:textColorHint="@color/grey" />
+
+            <!-- Terms and Conditions Checkbox -->
+            <CheckBox
+                android:id="@+id/checkbox_terms"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="I have read and agree to participate in the event."
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Submit Button -->
+    <Button
+        android:id="@+id/ButtonSubmitRegister"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_margin="16dp"
+        android:background="@drawable/round_square_button_unknown"
+        android:backgroundTint="@color/teal"
+        android:text="SUBMIT"
+        android:textSize="16sp"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

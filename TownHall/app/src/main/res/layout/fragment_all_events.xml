@@ -1,0 +1,32 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AllEventsFragment">
+
+    <Spinner
+        android:id="@+id/category_spinner"
+        android:layout_width="381dp"
+        android:layout_height="37dp"
+        android:layout_margin="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- TextView to display when no events are found -->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/all_event_recycler_view"
+        android:layout_width="381dp"
+        android:layout_height="810dp"
+        android:layout_marginStart="32dp"
+        android:nestedScrollingEnabled="false"
+        android:padding="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/category_spinner" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
