@@ -47,7 +47,7 @@ The Townhall is a mobile application developed to empower communities by providi
 **NUR FARAH WAHEEDA BINTI MOHD HISAM**
 - Drafted the UI design for the app.
 - Designed and implemented **Module 1: Volunteer Event Recommendation**
-- 
+  
 **SITI HAJAR BINTI MOHD NOR AZMAN**
 - Drafted the database structure for the app.
 - Designed and implemented **Module 4: Emergency Contacts**
